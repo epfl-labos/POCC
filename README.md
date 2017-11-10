@@ -1,5 +1,6 @@
-#POCC
-##What is it?
+# POCC
+
+<h1>What is it?</h1>
 
 Optimistic Causal Consistency (OCC) is a novel approach of causal consistency described in the paper "Optimistic Causal Consistency for Geo-Replicated Key-Value Stores", presented at ICDCS'17 (http://ieeexplore.ieee.org/document/7980260/).
 
@@ -8,7 +9,8 @@ POCC is an implementation of OCC based on physical clocks.
 You can find an extended version of the paper at:
 https://infoscience.epfl.ch/record/225991/files/SDZ-POCC-infoscience.pdf
 
-##Compilation
+<h1>Compilation</h1>
+
 In order to compile this project\'s code, you need to install gcc4.8, protobuf-2.6.2, boost-1.63.0 and gtest-1.7.0.
 The default project and build directories are /pocc and /pocc/build. You can change them by changing the PROJECT and BUILD values in the Makefile.
 The code is then compiled simply by running twice:
@@ -16,7 +18,9 @@ The code is then compiled simply by running twice:
 ```
     $make all
 ```
-##Running POCC
+
+<h1>Running POCC</h1>
+
 In order to run POCC, you need to run the group manager, the server and client programs.
 
 The group manager program can be run with:
@@ -56,16 +60,19 @@ where 'Command' can be one of:
 - ShowItem
 - ShowState
 
-##Licensing
+<h1>Licensing</h1>
+
 **POCC is released under the Apache Licence, Version 2.0.** 
 
 Please see the LICENSE file.
                                 
-##Contact
+<h1>Contact</h1>
+
 - Kristina Spirovska <kristina.spirovska@epfl.ch>
 - Diego Didona <diego.didona@epfl.ch>
 
-##Contributors
+<h1>Contributors</h1>
+
 - Kristina Spirovska
 - Diego Didona
 - Jiaqing Du
