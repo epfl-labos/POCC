@@ -1,0 +1,25 @@
+import "rpc_messages.proto";
+
+
+//message PbLogSetRecord {
+//  required bytes Key = 1;
+//  required bytes Value = 2;
+  // cops
+//  optional int64 LUT = 3;
+//  optional PbPhysicalTimeSpec PUT = 4;
+//  optional int32 SrcPartition = 5;
+//  optional int32 SrcReplica = 6;
+//  optional PbPhysicalTimeSpec PDUT = 7;
+//  optional bytes MinLSTKey = 8;
+// repeated PbPhysicalTimeSpec DV = 9;
+//}
+
+//We want to reduce to the bare minimum the stuff we send
+message PbLogSetRecord {
+  required bytes Key = 1;
+  required bytes Value = 2;
+  required PbPhysicalTimeSpec PUT = 3;
+  optional PbPhysicalTimeSpec PDUT = 4;
+  repeated PbPhysicalTimeSpec DV = 5;
+  required int32 SrcReplica = 6;
+}
